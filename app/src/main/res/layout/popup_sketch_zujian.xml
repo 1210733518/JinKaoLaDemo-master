@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/zujain_group"
+        android:layout_width="210dp"
+        android:layout_height="32dp"
+        android:background="@drawable/gongjulanbeijing"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/shexiangtou_img"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/shexiangtou"
+            android:paddingBottom="5dp"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/paizhao_img"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="6dp"
+            android:button="@null"
+            android:drawableTop="@drawable/paizhao"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/jietu_img"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="6dp"
+            android:button="@null"
+            android:drawableTop="@drawable/jietu"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/ziti_img"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="6dp"
+            android:button="@null"
+            android:drawableTop="@drawable/ziti"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/beijing_img"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="6dp"
+            android:button="@null"
+            android:drawableTop="@drawable/beijing"
+            android:gravity="center" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

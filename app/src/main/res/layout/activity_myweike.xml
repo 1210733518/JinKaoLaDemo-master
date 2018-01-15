@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/head_layout"
+        android:layout_height="44dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/gongjulanbeijing"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/wodeweike_detail"
+            android:layout_height="match_parent"
+            android:layout_width="165dp"
+            android:text="我的微课"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@drawable/wodeweikebg"
+            />
+        <Button
+            android:id="@+id/kaolaxuetang"
+            android:layout_height="match_parent"
+            android:layout_width="165dp"
+            android:text="考拉学堂"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@drawable/gongjulanbeijing"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/head_layout"
+        android:id="@+id/title_layout"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/dengpao"
+            />
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="亲您一共有"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color_black"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="4"
+            android:textSize="16sp"
+            android:textColor="@color/text_blue"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="个视频, "
+            android:textColor="@color/text_color_black"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="1"
+            android:textSize="16sp"
+            android:textColor="@color/text_blue"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="个未上传视频。"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:textColor="@color/text_color_black"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="20dp"
+            android:src="@drawable/shanchuheise"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            />
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="20dp"
+            android:src="@drawable/shangchuanheose"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="160dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            >
+            <RelativeLayout
+                android:id="@+id/rela_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/weikeimg1"
+                    android:layout_height="80dp"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/zhishidianch"
+                    android:scaleType="centerCrop"
+                    />
+                <ImageView
+                    android:layout_height="20dp"
+                    android:layout_width="40dp"
+                    android:src="@drawable/weishangchaun"
+                    android:layout_marginTop="2dp"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="高考知识串讲"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_blue"
+                    />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/fenxiang"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2017-11-11 13:10"
+                android:textSize="10sp"
+                android:textColor="@color/text_color_black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="时长 :10:10"
+                android:textSize="10sp"
+                android:textColor="@color/text_color_black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="大小 30MB"
+                android:textSize="10sp"
+                android:textColor="@color/text_color_black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            >
+            <ImageView
+                android:layout_height="80dp"
+                android:layout_width="match_parent"
+                android:src="@drawable/huaxuedaou"
+                android:scaleType="centerCrop"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="高考化学思维导图"
+                    android:textColor="@color/text_blue"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/fenxiang"
+                    android:layout_marginLeft="12dp"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2017-11-11 13:20"
+                android:textSize="10sp"
+                android:textColor="@color/text_color_black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="时长 :10:20"
+                android:textSize="10sp"
+                android:textColor="@color/text_color_black"
+                />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="大小 30MB"
+                android:textColor="@color/text_color_black"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            >
+            <ImageView
+                android:layout_height="80dp"
+                android:layout_width="match_parent"
+                android:src="@drawable/shuxuedaotu"
+                android:scaleType="centerCrop"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="高考数学思维导图"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_blue"
+                    />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/fenxiang"
+                    android:layout_marginLeft="12dp"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2017-11-11 13:30"
+                android:textSize="10sp"
+                android:textColor="@color/text_color_black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="时长 :10:30"
+                android:textSize="10sp"
+                android:textColor="@color/text_color_black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="大小 30MB"
+                android:textSize="10sp"
+                android:textColor="@color/text_color_black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_height="80dp"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/zhishidianch"
+                    android:scaleType="centerCrop"
+                    />
+                <ImageView
+                    android:layout_height="20dp"
+                    android:layout_width="40dp"
+                    android:src="@drawable/zhengzaishangchuan"
+                    android:layout_marginTop="2dp"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="高考知识串讲 (二)"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_blue"
+                    />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/fenxiang"
+                    android:layout_marginTop="2dp"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2017-11-11 13:40"
+                android:textSize="10sp"
+                android:textColor="@color/text_color_black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="时长 :10:40"
+                android:textSize="10sp"
+                android:textColor="@color/text_color_black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="大小 30MB"
+                android:textSize="10sp"
+                android:textColor="@color/text_color_black"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <GridView
+        android:id="@+id/weike_grid"
+        android:layout_below="@+id/title_layout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:numColumns="4"
+        android:gravity="center"
+
+        />
+
+    <VideoView
+        android:id="@+id/myvideo"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

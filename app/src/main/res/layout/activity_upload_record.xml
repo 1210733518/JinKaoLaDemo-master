@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wyj.cn.jinkaolademo.ui.upload.UploadRecordActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gongjulanbeijing">
+
+        <ImageView
+            android:id="@+id/iv_navi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/left_arraw" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="上传"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <EditText
+
+        android:id="@+id/et_lesson_name"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/shape_upload_lesson"
+        android:hint="微课名称"
+        android:paddingLeft="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/et_class"
+        app:layout_constraintStart_toStartOf="parent" />
+    <RelativeLayout
+        android:id="@+id/et_class"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/shape_upload_lesson"
+        app:layout_constraintBottom_toTopOf="@+id/et_knowlage"
+        app:layout_constraintStart_toStartOf="parent" >
+    <EditText
+        android:paddingLeft="15dp"
+        android:id="@+id/edit_class"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="年级"
+       />
+        <ImageView
+            android:id="@+id/iv_select_class"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/down_arraw"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/et_knowlage"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/shape_upload_lesson"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintStart_toStartOf="parent">
+    <EditText
+        android:id="@+id/edit_knowlage"
+        android:paddingLeft="15dp"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="微课知识点"
+        />
+        <ImageView
+            android:id="@+id/iv_select_knowlage"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/down_arraw"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/shape_upload_lesson"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/et_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="微课简介" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="12dp"
+        android:text="选择你要定义的封面"
+        android:textColor="#323131"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/et_lesson_name"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
+    <RelativeLayout
+        android:id="@+id/imageView1"
+        android:layout_width="140dp"
+        android:layout_height="98.06dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2">
+    <ImageView
+        android:id="@+id/iv_1"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="93.06dp"
+        android:background="@drawable/cover_yuwen"
+        />
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/select_box"
+            />
+        <ImageView
+            android:id="@+id/iv_selected_1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/selected"
+            />
+    </RelativeLayout>
+     <RelativeLayout
+         android:id="@+id/imageView2"
+         android:layout_width="140dp"
+         android:layout_height="98.06dp"
+         android:layout_marginBottom="25dp"
+         android:layout_marginRight="16dp"
+         app:layout_constraintBottom_toTopOf="@+id/iv_cover_select"
+         app:layout_constraintEnd_toEndOf="parent" >
+    <ImageView
+        android:id="@+id/iv_2"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="93.06dp"
+        android:background="@drawable/cover_math"
+        />
+
+         <ImageView
+             android:layout_marginTop="5dp"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:background="@drawable/select_box"
+             />
+         <ImageView
+             android:id="@+id/iv_selected_2"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:background="@drawable/selected"
+             />
+     </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/imageView3"
+        android:layout_width="140dp"
+        android:layout_height="98.06dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_cover_select">
+    <ImageView
+        android:id="@+id/iv_3"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="93.06dp"
+        android:background="@drawable/cover_wuli"
+       />
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/select_box"
+            />
+        <ImageView
+
+            android:id="@+id/iv_selected_3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/selected"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_cover_select"
+        android:layout_width="140dp"
+        android:layout_height="93.06dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/cover_select"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/bt_commit"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp"
+        android:text="确定"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="#2a88fb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

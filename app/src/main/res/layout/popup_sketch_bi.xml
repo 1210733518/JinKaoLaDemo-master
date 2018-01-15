@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+    android:id="@+id/mystroke_type_radio_group"
+    android:layout_width="132dp"
+    android:layout_height="44dp"
+    android:orientation="horizontal"
+    android:background="@drawable/henggongjulan">
+
+    <RadioButton
+        android:id="@+id/qianbi"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:drawableTop="@drawable/bi"
+        android:button="@null" />
+    <RadioButton
+        android:id="@+id/gangbi"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_weight="1"
+        android:button="@null"
+        android:layout_gravity="center"
+        android:drawableTop="@drawable/gangbi" />
+    <RadioButton
+        android:id="@+id/maobi"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_weight="1"
+        android:button="@null"
+        android:layout_gravity="center"
+        android:drawableTop="@drawable/maobi" />
+</RadioGroup>
+
+    <LinearLayout
+        android:layout_width="132dp"
+        android:layout_height="44dp"
+        android:background="@drawable/henggongjulan">
+        <SeekBar
+            android:id="@+id/stroke_huabichicui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            style="@style/seekbarstyle"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
